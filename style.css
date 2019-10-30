@@ -7,6 +7,7 @@ html {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.3em;
 }
 
 html * {
@@ -21,6 +22,29 @@ body {
 
 p {
   font-size: 0.8em;
+  color: hsl(229, 8%, 60%);
+}
+
+/*********************************
+Buttons
+*********************************/
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 1em 1.5em;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-blue {
+  background: hsl(231, 69%, 60%);
+}
+
+.btn-red {
+  background: hsl(0, 94%, 66%);
+}
 }
 
 /*********************************
