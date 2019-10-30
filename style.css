@@ -4,7 +4,9 @@ common settings
 *********************************/
 
 html {
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 html * {
