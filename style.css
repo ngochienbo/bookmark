@@ -33,7 +33,7 @@ Buttons
   border: none;
   border-radius: 5px;
   padding: 1em 1.5em;
-  color: #fff;
+  color: hsl(229, 8%, 90%);
   font-weight: 600;
   text-decoration: none;
 }
