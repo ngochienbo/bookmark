@@ -20,6 +20,11 @@ body {
   margin: 0;
 }
 
+h3 {
+  font-size: 1.25em;
+  letter-spacing: 0.05em;
+}
+
 p {
   font-size: 0.8em;
   color: hsl(229, 8%, 60%);
@@ -33,7 +38,7 @@ Buttons
   border: none;
   border-radius: 5px;
   padding: 1em 1.5em;
-  color: #fff;
+  color: hsl(229, 8%, 90%);
   font-weight: 600;
   text-decoration: none;
 }
