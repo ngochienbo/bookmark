@@ -1,0 +1,8 @@
+body {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+body * {
+    font-family: 'Rubik', sans-serif;
+}
