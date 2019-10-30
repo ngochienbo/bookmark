@@ -20,6 +20,11 @@ body {
   margin: 0;
 }
 
+h3 {
+  font-size: 1.25em;
+  letter-spacing: 0.05em;
+}
+
 p {
   font-size: 0.8em;
   color: hsl(229, 8%, 60%);
