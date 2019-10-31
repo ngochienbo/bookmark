@@ -252,6 +252,32 @@ form input {
   border-radius: 5px;
 }
 
+@media (min-width: 376px) {
+  .newsletter h3 {
+    max-width: 15em;
+  }
+
+  .newsletter p {
+    width: 20em;
+  }
+
+  form {
+    max-width: 26em;
+  }
+
+  form * {
+    margin: auto 1%;
+  }
+
+  form input {
+    width: 64%;
+  }
+
+  form button {
+    width: 30%;
+  }
+}
+
 /*********************************
 Footer section
 *********************************/
