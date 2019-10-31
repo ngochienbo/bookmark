@@ -78,13 +78,13 @@ img {
 }
 
 .download > p {
-  margin-bottom: 5em;
+  margin: auto auto 5em;
 }
 
 .download-cards div {
   width: 285px;
   border-radius: 1em;
-  box-shadow: 0px 7px 15px hsl(229, 8%, 93%);
+  box-shadow: 0px 10px 15px hsl(229, 8%, 93%);
   margin-bottom: 4em;
   padding: 1.1em 0;
 }
