@@ -191,4 +191,39 @@ form input {
   border-radius: 5px;
 }
 
+/*********************************
+Footer section
+*********************************/
+
+footer {
+  padding: 2em 4em;
+  background: hsl(229, 31%, 21%);
+  text-align: center;
+}
+
+.footer-logo svg g {
+  fill: red;
+}
+
+footer ul {
+  margin: 2em 0 3em;
+  padding: 0 4em;
+  color: hsl(229, 8%, 80%);
+  font-size: 0.85em;
+  letter-spacing: 0.1em ;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 1.8em;
+}
+
+.socialmedia a {
+  display: inline-block;
+}
+
+.socialmedia img {
+  width: 24px;
+  margin: 0 1.1em;
 }
