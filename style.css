@@ -314,3 +314,34 @@ footer li {
   width: 24px;
   margin: 0 1.1em;
 }
+
+@media (min-width: 376px) {
+  footer {
+    padding: 2em 0 2em 10%;
+    text-align: initial;
+  }
+
+  footer > * {
+    display: inline-block;
+  }
+
+  footer ul {
+    display: inline;
+    position: relative;
+    top: -0.5em;
+    margin: initial;
+    padding: 0 3em;
+  }
+
+  footer ul * {
+    display: inline;
+    margin: auto 1.5em;
+    font-size: 0.8em;
+  }
+
+  .socialmedia {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+  }
+}
