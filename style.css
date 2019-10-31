@@ -76,6 +76,10 @@ img {
   text-align: center;
 }
 
+.download > p {
+  margin-bottom: 5em;
+}
+
 .download-cards div {
   width: 285px;
   border-radius: 1em;
@@ -95,7 +99,7 @@ img {
 }
 
 .download-card-logo {
-  width: 6em;
+  width: 5.7em;
 }
 
 .download-cards h4 {
