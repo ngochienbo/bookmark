@@ -57,6 +57,7 @@ Buttons
   color: hsl(229, 8%, 90%);
   font-weight: 600;
   text-decoration: none;
+  box-shadow: 0 6px 5px rgba(0.5, 0.5, 0.5, 0.08)
 }
 
 .btn-blue {
@@ -85,7 +86,7 @@ Navbar Section
 .navbar-hamburger {
   width: 1.2rem;
   height: 1.2rem;
-  padding-bottom: 0.5rem;
+  padding: 0;
   border: none;
   background: no-repeat url("images/icon-hamburger.svg") center center / 100%;
 }
