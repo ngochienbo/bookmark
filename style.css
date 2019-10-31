@@ -112,6 +112,7 @@ Intro Section
 }
 
 .intro-content {
+  max-width: 36rem;
   padding-top: 3rem;
   text-align: center;
 }
@@ -144,6 +145,7 @@ Intro Section
 
 .intro-img {
   width: 95%;
+  max-width: 31rem;
   position: relative;
 }
 
@@ -171,6 +173,8 @@ Features Section
 .features {
   padding: 4rem 0;
   text-align: center;
+  max-width: 36rem;
+  margin: 0 auto;
 }
 
 .features-summary {
