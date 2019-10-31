@@ -344,6 +344,79 @@ Features Section
   margin-top: 4rem;
 }
 
+@media (min-width: 1440px) {
+  .features {
+    padding: 3em 8em 9em;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .features-summary {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .features-menu {
+    overflow: auto;
+    margin-bottom: 3em;
+
+    width: 60%;
+  }
+
+  .features-menu > li {
+    float: left;
+    width: 33.3%;
+  }
+
+  .features-menu > li:first-child {
+    border-top: none;
+  }
+
+  .features-menu > li::after {
+    width: 100%;
+  }
+
+  .features-tabs {
+    display: flow-root;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .features-tabs::after {
+    height: 100%;
+    bottom: -5rem;
+    right: 35rem;
+  }
+
+  .features-tab2,
+  .features-tab3 {
+  }
+
+  .features-tab1 img,
+  .features-tab2 img,
+  .features-tab3 img {
+    width: 50%;
+    margin-right: 6em;
+    float: left;
+  }
+
+  .features-tab1 .btn,
+  .features-tab2 .btn,
+  .features-tab3 .btn {
+    display: initial;
+  }
+
+  .features-tab1 p,
+  .features-tab2 p,
+  .features-tab3 p {
+    margin-bottom: 2em;
+  }
+
+  .features-tab-header {
+    margin-top: 0;
+    padding-top: 2.5em;
+  }
+
 /*********************************
 Download section
 *********************************/
