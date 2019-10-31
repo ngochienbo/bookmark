@@ -195,7 +195,48 @@ Intro Section
 
 .intro-img img {
   display: block;
-  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .intro {
+    padding: 3em 8em;
+    max-width: 1440px;
+    margin: 0 auto;
+    flex-flow: row;
+  }
+
+  .intro-content,
+  .intro-img {
+    flex: initial;
+  }
+
+  .intro-content {
+    max-width: none;
+    width: 31rem;
+    margin-top: 5rem;
+    padding: 0 2em 0 0;
+    align-self: start;
+    text-align: left;
+  }
+
+  .intro-content > h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+  }
+
+  .intro-content > h1,
+  .intro-content > p {
+    padding: 0;
+  }
+
+  .intro-img {
+    max-width: none;
+    width: 34rem;
+  }
+
+  .intro-img img {
+    width: 115%;
+  }
 }
 
 /*********************************
