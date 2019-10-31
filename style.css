@@ -155,10 +155,11 @@ FAQ section
 }
 
 .faq p {
-  margin-bottom: 4em;
+  margin: auto auto 4em;
 }
 
 .faq ul {
+  margin: auto;
   padding: 0;
   list-style-type: none;
   text-align: left;
