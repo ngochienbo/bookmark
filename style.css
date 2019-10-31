@@ -100,6 +100,38 @@ Navbar Section
   display: none;
 }
 
+@media (min-width: 1440px) {
+  .navbar {
+    padding: 2em 8em;
+  }
+
+  .navbar-menu {
+    display: initial;
+    margin-left: auto;
+  }
+
+  .navbar-menu > li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 3em;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+  }
+
+  .navbar-btn {
+    display: initial;
+    color: #fff;
+    padding: 0.7em 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+
+  .navbar-hamburger {
+    display: none;
+  }
+}
 /*********************************
 Intro Section
 *********************************/
