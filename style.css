@@ -98,3 +98,67 @@ Navbar Section
   display: none;
 }
 
+/*********************************
+Intro Section
+*********************************/
+
+.intro {
+  display: flex;
+  flex-flow: column-reverse;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+
+.intro-content {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.intro-content > h1 {
+  font-size: 1.7em;
+  line-height: 1.3em;
+}
+
+.intro-content > h1,
+.intro-content > p {
+  padding: 0px 2rem;
+}
+
+.intro-content > .btn {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.intro-content > .btn-blue {
+  margin-right: 0.5rem;
+  color: #fff;
+}
+
+.intro-content > .btn-gray {
+  color: #666;
+  box-shadow: 0 6px 5px rgba(0.5, 0.5, 0.5, 0.1)
+}
+
+
+.intro-img {
+  width: 95%;
+  position: relative;
+}
+
+.intro-img::after {
+  content: "";
+  width: 150%;
+  height: 80%;
+  position: absolute;
+  bottom: -1rem;
+  left: 5rem;
+  background: hsl(231, 69%, 60%);
+  border-radius: 50rem;
+  z-index: -1;
+}
+
+.intro-img img {
+  display: block;
+  width: 100%;
+}
+
