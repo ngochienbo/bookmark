@@ -31,6 +31,16 @@ p {
   letter-spacing: 0.02em;
 }
 
+@media (min-width: 376px) {
+  h3 {
+    font-size: 1.7em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
 /*********************************
 Buttons
 *********************************/
