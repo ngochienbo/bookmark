@@ -63,3 +63,38 @@ Download section
 img {
   width: 100%;
 }
+
+/*********************************
+Navbar Section
+*********************************/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.navbar-logo img {
+  display: block;
+  width: 9rem;
+}
+
+.navbar-hamburger {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding-bottom: 0.5rem;
+  border: none;
+  background: no-repeat url("images/icon-hamburger.svg") center center / 100%;
+}
+
+.navbar-menu {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-btn {
+  display: none;
+}
+
