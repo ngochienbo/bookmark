@@ -192,6 +192,24 @@ FAQ section
   margin-top: 2em;
 }
 
+@media (min-width: 376px) {
+  .faq > p {
+    max-width: 29em;
+  }
+
+  .faq ul {
+    max-width: 31em;
+  }
+
+  .faq li:first-child {
+    border-top: 1.5px solid hsl(229, 8%, 90%);
+  }
+
+  .faq li h5 {
+    font-size: 1em;
+  }
+}
+
 /*********************************
 Newsletter section
 *********************************/
