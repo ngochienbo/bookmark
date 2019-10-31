@@ -105,4 +105,51 @@ img {
   width: 83%;
 }
 
+/*********************************
+FAQ section
+*********************************/
+
+.faq {
+  padding: 3em 9% 7em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.faq p {
+  margin-bottom: 4em;
+}
+
+.faq ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.faq li {
+  border-bottom: 1px solid hsl(229, 8%, 90%);
+}
+
+.faq li h5 {
+  position: relative;
+}
+
+.faq li h5::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 11px;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  background: url(images/icon-arrow.svg);
+}
+
+.faq li p {
+  margin-bottom: 2em;
+}
+
+.faq button {
+  margin-top: 2em;
+}
+
 }
