@@ -64,8 +64,8 @@ Buttons
   font-weight: 600;
   text-decoration: none;
   box-shadow: 0 6px 5px rgba(0.5, 0.5, 0.5, 0.08);
-  transition: color 3s ease,
-              background-color 3s ease;
+  transition: color 0.3s ease,
+              background-color 0.3s ease;
 }
 
 .btn-blue {
