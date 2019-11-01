@@ -20,6 +20,12 @@ body {
   margin: 0;
 }
 
+/* Turn off transitions so they don't activate on page load */
+
+.preload * {
+  transition: none !important;
+}
+
 h3 {
   font-size: 1.25em;
   letter-spacing: 0.05em;
