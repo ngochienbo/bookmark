@@ -451,14 +451,11 @@ Features Section
     margin-top: 0;
     padding-top: 2.5em;
   }
+}
 
 /*********************************
 Download section
 *********************************/
-
-img {
-  width: 100%;
-}
 
 .download {
   padding: 3em 12%;
