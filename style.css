@@ -57,7 +57,8 @@ Buttons
   color: hsl(229, 8%, 90%);
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 6px 5px rgba(0.5, 0.5, 0.5, 0.08)
+  box-shadow: 0 6px 5px rgba(0.5, 0.5, 0.5, 0.08);
+  transition: all 0.3s ease;
 }
 
 .btn-blue {
@@ -67,6 +68,45 @@ Buttons
 .btn-red {
   background: hsl(0, 94%, 66%);
 }
+
+.btn-gray {
+  color: #666;
+  box-shadow: 0 6px 5px rgba(0.5, 0.5, 0.5, 0.1)
+}
+
+/*********************************
+Active States
+*********************************/
+
+/* Make items orange on hover */
+.navbar-menu > li:hover,
+.features-menu > li:hover,
+.faq li h5:hover,
+footer li:hover {
+  color: #fb8e5d;
+}
+
+.btn-blue:hover {
+  box-shadow: 0 0 0 2px hsl(231, 69%, 60%) inset,
+              0 6px 5px rgba(0.5, 0.5, 0.5, 0.08);
+  color: hsl(231, 69%, 60%) !important;;
+  background-color: #fff;
+}
+
+.btn-red:hover {
+  box-shadow: 0 0 0 2px hsl(0, 94%, 66%) inset,
+              0 6px 5px rgba(0.5, 0.5, 0.5, 0.08);
+  color: hsl(0, 94%, 66%) !important;;
+  background-color: #fff;
+}
+
+.btn-gray:hover {
+  box-shadow: 0 0 0 2px #666 inset,
+              0 6px 5px rgba(0.5, 0.5, 0.5, 0.1);
+  color: #666 !important;;
+  background-color: #fff;
+}
+
 /*********************************
 Navbar Section
 *********************************/
@@ -169,12 +209,6 @@ Intro Section
   margin-right: 0.5rem;
   color: #fff;
 }
-
-.intro-content > .btn-gray {
-  color: #666;
-  box-shadow: 0 6px 5px rgba(0.5, 0.5, 0.5, 0.1)
-}
-
 
 .intro-img {
   width: 95%;
