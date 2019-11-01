@@ -236,6 +236,7 @@ Intro Section
 
 .intro-img img {
   display: block;
+  width: 100%;
 }
 
 @media (min-width: 1440px) {
