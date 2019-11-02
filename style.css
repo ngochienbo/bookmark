@@ -576,7 +576,10 @@ FAQ section closed
   position: absolute;
   top: 3px;
   right: 0;
-  background: url(images/icon-arrow.svg);
+  background: hsl(231, 69%, 60%);
+  -webkit-mask: url(images/icon-arrow.svg);
+  transition: transform 1s,
+              background 0.5s 0.3s;
 }
 
 .faq li p {
