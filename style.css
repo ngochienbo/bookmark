@@ -708,9 +708,24 @@ footer li {
   display: inline-block;
 }
 
-.socialmedia img {
+.socialmedia a {
   width: 24px;
+  height: 24px;
   margin: 0 1.1em;
+}
+
+.socialmedia a:first-child {
+  background: #fff;
+  -webkit-mask: url(images/icon-facebook.svg) center no-repeat;
+}
+
+.socialmedia a:last-child {
+  background: #fff;
+  -webkit-mask: url(images/icon-twitter.svg) center no-repeat;
+}
+
+.socialmedia a:hover {
+  background: hsl(0, 94%, 66%);
 }
 
 @media (min-width: 376px) {
