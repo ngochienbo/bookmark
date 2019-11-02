@@ -539,7 +539,7 @@ Download section
 }
 
 /*********************************
-FAQ section
+FAQ section closed
 *********************************/
 
 .faq {
@@ -560,6 +560,7 @@ FAQ section
 }
 
 .faq li {
+  position: relative;
   border-bottom: 1px solid hsl(229, 8%, 90%);
 }
 
@@ -583,7 +584,7 @@ FAQ section
 }
 
 .faq button {
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
 @media (min-width: 376px) {
