@@ -737,6 +737,16 @@ form input::placeholder {
   }
 }
 
+/*********************************
+Newsletter section - email input
+validation
+*********************************/
+.invalid-email input[type="text"] {
+  border: 2px solid hsl(0, 94%, 66%);
+  box-shadow: 0 20px 0 hsl(0, 94%, 66%);
+  z-index: 1;
+}
+
 .invalid-email::after {
   content: "Whoops, make sure it's an email";
   display: inline-block;
