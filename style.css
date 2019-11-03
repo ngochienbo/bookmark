@@ -737,6 +737,22 @@ form input::placeholder {
   }
 }
 
+.invalid-email::after {
+  content: "Whoops, make sure it's an email";
+  display: inline-block;
+  width: calc(100% - 1em);
+  height: 25px;
+  position: relative;
+  top: -17px;
+  padding: 0 0 0 1em;
+  border-radius: 0 0 5px 5px;
+  background: hsl(0, 94%, 66%);
+  color: #fff;
+  font-size: 0.55em;
+  font-style: italic;
+  text-align: left;
+}
+
 /*********************************
 Footer section
 *********************************/
