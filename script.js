@@ -27,4 +27,54 @@ window.addEventListener('load', function() {
     return h
 })
 
+/***********************************************
+FAQ section - opening and closing answer
+***********************************************/
+
+document.querySelector('.faq-questions').addEventListener('click', function(e) {
+
+    // Check if clicked element is actually <h5>
+    if (e.target.parentNode.parentNode === e.currentTarget) {
+        var x = e.target.parentNode.parentNode.children;
+        var i = Array.prototype.indexOf.call (x, e.target.parentNode);  // Using Array's indexOf method on a nodelist
+        var questionChosen = document.querySelector('.faq-question' + (i + 1));
+        var answerChosen = document.querySelector('.faq-answer' + (i + 1));
+        var answerOpen = document.querySelector('.faq-answer' + currentOpen);
+        var questionOpen = document.querySelector('.faq-question' + currentOpen);
+        var open = function() {
+            answerChosen.style.height = h[i] + 'px';
+            answerChosen.style.transition = 'height 1s';
+            answerChosen.style.visibility = 'initial';
+            answerChosen.style.position = 'initial';
+            questionChosen.classList.toggle('faq-open');
+        }
+        var close = function() {
+            answerOpen.style.height = '0px';
+            answerOpen.style.transition = 'height 1s';
+            answerOpen.style.visibility = 'initial';
+            answerOpen.style.position = 'initial';
+            questionOpen.classList.toggle('faq-open');
+        }
+        
+        // 1. Open an answer with all answers closed
+        if (currentOpen === 0) {
+            open();
+            currentOpen = i + 1;
+        } 
+        
+        // 2. Close an already open answer
+        else if (questionChosen.classList.contains('faq-open')) {
+            close();
+            currentOpen = 0;
+        } 
+        
+        // 3. Open an answer with another answer already open, which will be closed
+        else {
+            close();
+            open();
+            currentOpen = i + 1;
+        }
+    }
+})
+
 })
