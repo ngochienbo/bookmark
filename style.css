@@ -676,6 +676,10 @@ form input[type="text"] {
   color: initial;
 }
 
+form input::placeholder {
+  opacity: 0.4;
+}
+
 .exclamation {
   visibility: hidden;
   display: inline-block;
