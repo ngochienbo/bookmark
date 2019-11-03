@@ -622,6 +622,10 @@ FAQ section open
   transform: rotateX(180deg);
 }
 
+.faq-questions .faq-open p {
+  margin-bottom: 2em;
+}
+
 /*********************************
 Newsletter section
 *********************************/
