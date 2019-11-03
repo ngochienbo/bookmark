@@ -761,6 +761,9 @@ validation
   font-size: 0.55em;
   font-style: italic;
   text-align: left;
+  z-index: 1;
+}
+
 .invalid-email .exclamation {
   visibility: initial;
 }
