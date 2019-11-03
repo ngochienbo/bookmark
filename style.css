@@ -459,7 +459,7 @@ Features Section
   border-top: 2px #eee solid;
 }
 
-.features-menu > li::after {
+.features-menu > li > span {
   content: "";
   position: absolute;
   width: 38%;
@@ -468,15 +468,17 @@ Features Section
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 0.3s;
 }
 
-.features-menu > li:nth-child(2)::after,
-.features-menu > li:nth-child(3)::after {
-  display: none;
+.features-menu > li:nth-child(2) > span,
+.features-menu > li:nth-child(3) > span {
+  width: 0;
 }
 
 .features-tabs {
   position: relative;
+  height: 23.5em;
 }
 
 .features-tabs::after {
@@ -491,11 +493,17 @@ Features Section
   z-index: -1;
 }
 
+.features-tab1,
 .features-tab2,
 .features-tab3 {
   position: absolute;
   top: 0px;
   left: 0px;
+  transition: opacity 0.5s;
+}
+
+.features-tab2,
+.features-tab3 {
   opacity: 0;
   z-index: -1;
 }
