@@ -38,6 +38,12 @@ p {
   letter-spacing: 0.02em;
 }
 
+/* Setting pointer cursor for interactable elements */
+
+li, button, h5, a {
+  cursor: pointer;
+}
+
 @media (min-width: 376px) {
   h3 {
     font-size: 1.7em;
