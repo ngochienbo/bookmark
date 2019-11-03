@@ -3,6 +3,8 @@ Global variables
 ***********************************************/
 
 var h = []; //array for <p> elements' heights in FAQ section
+var currentOpen = 0; //index of the currently open answer
+
 /***********************************************
 Preload script
 ***********************************************/
