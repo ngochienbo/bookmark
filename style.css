@@ -615,6 +615,14 @@ FAQ section closed
 }
 
 /*********************************
+FAQ section open
+*********************************/
+.faq-questions .faq-open h5::after {
+  background: hsl(0, 94%, 66%);
+  transform: rotateX(180deg);
+}
+
+/*********************************
 Newsletter section
 *********************************/
 
