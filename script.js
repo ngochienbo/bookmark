@@ -77,4 +77,24 @@ document.querySelector('.faq-questions').addEventListener('click', function(e) {
     }
 })
 
+/***********************************************
+Newsletter section - email input validation
+***********************************************/
+
+document.querySelector('#email').addEventListener('click', function(e) {
+    var selector = document.querySelector('input');
+    var input = selector.value;
+
+    //Regex for email address validation
+    var validator = /^[^`!@#$%*=:;'",/\n\r\t ]*@[^`!@#$%*=:;'",/ \n\r\t]*\.[^`!@#$%*=:;'",/\n\r\t ]{2,3}$/g;
+
+    //Regex test method does not work correctly, using search method for string works fine though
+    if (input.search(validator) === -1 ) {
+        selector.parentNode.classList.add('invalid-email');
+        
+        //Stop button from submitting form if email invalid
+        e.preventDefault();
+    } else {
+        selector.parentNode.classList.remove('invalid-email');
+    }
 })
