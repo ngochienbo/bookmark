@@ -37,4 +37,32 @@ menu.addEventListener("click", function(ev) {
   var listItems = target.parentNode.children;
   var targetID = Array.prototype.indexOf.call(listItems, target);
   var newTabNum = targetID + 1;
+
+  switchTabs(newTabNum, listItems);
 });
+
+// Switch to the new tab and complete all necessary transitions
+function switchTabs(newTabNum, listItems) {
+  if (newTabNum !== curTabNum) {
+    switchToTab(newTabNum);
+
+    curTabNum = newTabNum;
+  }
+
+  // Show new tab, hide old tab
+  function switchToTab(newTabNum) {
+    var curTab = document.querySelector(".features-tab" + curTabNum);
+    var newTab = document.querySelector(".features-tab" + newTabNum);
+
+    // disable current tab and enable selected tab
+
+    curTab.style.transition = "opacity 0.5s";
+    curTab.style.opacity = 0;
+    curTab.style.zIndex = 1;
+
+    newTab.style.transition = "opacity 0.2s";
+    newTab.style.opacity = 1;
+    newTab.style.zIndex = 2;
+  }
+}
+
