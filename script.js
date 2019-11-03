@@ -18,6 +18,12 @@ window.addEventListener('load', function() {
         var answer = document.querySelector('.faq-answer' + (i + 1));
         h[i] = answer.clientHeight;
 
+        // After obtaining height for a <p> set it to be 0 height to hide it
+        answer.style.height = '0px';
+        answer.style.transition = 'height 1s';
+        answer.style.visibility = 'initial';
+        answer.style.position = 'initial';
+    }
     return h
 })
 
