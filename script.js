@@ -45,6 +45,7 @@ menu.addEventListener("click", function(ev) {
 function switchTabs(newTabNum, listItems) {
   if (newTabNum !== curTabNum) {
     switchToTab(newTabNum);
+    switchHighlight(newTabNum, listItems);
 
     curTabNum = newTabNum;
   }
@@ -64,5 +65,23 @@ function switchTabs(newTabNum, listItems) {
     newTab.style.opacity = 1;
     newTab.style.zIndex = 2;
   }
+
+  // Display new highlight and hide old one in the menu list
+  function switchHighlight(newTabNum, listItems) {
+    if (newTabNum !== curTabNum) {
+      // Get current and new HL objects
+      var curListItem = listItems[curTabNum-1];
+      var curHL = curListItem.children[0];
+      var HLWidth = window.getComputedStyle(curHL).width;
+
+      var newListItem = listItems[newTabNum-1];
+      var newHL = newListItem.children[0];
+
+      // Apply transition effect
+      curHL.style.width = 0 + "px";
+      newHL.style.width = HLWidth;
+    }
+  }
 }
+
 
