@@ -125,9 +125,10 @@ Navbar Section
   justify-content: space-between;
 }
 
-.navbar-logo img {
-  display: block;
-  width: 9rem;
+.navbar-logo {
+  width: 9em;
+  height: 1.5em;
+  background: no-repeat url(images/logo-bookmark.svg);
 }
 
 .navbar-hamburger {
@@ -146,6 +147,35 @@ Navbar Section
 
 .navbar-btn {
   display: none;
+.navbar-socialmedia {
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+.navbar-socialmedia > a {
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  background: hsl(229, 8%, 75%);
+}
+
+.navbar-socialmedia > a:hover {
+  background: #fff;
+}
+
+.icon-fb {
+  margin: auto 2em 2em auto;
+  mask: no-repeat url(images/icon-facebook.svg);
+  -webkit-mask: no-repeat url(images/icon-facebook.svg);
+}
+
+.icon-twitter {
+  margin: auto auto 2em 0;
+  mask: no-repeat url(images/icon-twitter.svg);
+  -webkit-mask: no-repeat url(images/icon-twitter.svg);
+}
+
 }
 
 @media (min-width: 1440px) {
@@ -177,6 +207,10 @@ Navbar Section
   }
 
   .navbar-hamburger {
+    display: none;
+  }
+
+  .navbar-socialmedia {
     display: none;
   }
 }
