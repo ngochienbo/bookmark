@@ -114,6 +114,11 @@ footer li:hover {
   background-color: #fff;
 }
 
+/* Blur other sections when navbar hamburger menu activated */
+.blur {
+  filter: blur(2px);
+}
+
 /*********************************
 Navbar Section
 *********************************/
@@ -249,6 +254,32 @@ Navbar Section
 
   }
 
+  /* Active states for the Navbar */
+
+  .navbar.active {
+    height: 100vh;
+    background: hsla(231, 100%, 7%, 0.90);
+  }
+
+  .navbar.active .navbar-logo {
+    background: hsl(229, 8%, 75%);
+    mask: no-repeat url(images/logo-bookmark.svg);
+    -webkit-mask: no-repeat url(images/logo-bookmark.svg);
+  }
+
+  .navbar.active .navbar-hamburger {
+    background: hsl(229, 8%, 75%);
+    mask: no-repeat url(images/icon-close.svg);
+    -webkit-mask: no-repeat url(images/icon-close.svg);
+  }
+
+  .navbar.active .navbar-hamburger:hover {
+    background: #fff;
+  }
+
+  .navbar.active .navbar-btn {
+    transition: none;
+  }
 }
 
 @media (min-width: 1440px) {
