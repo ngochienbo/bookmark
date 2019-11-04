@@ -2,7 +2,10 @@ window.addEventListener("load", function() {
     document.querySelector("body").classList.remove("preload");
 });
 
-// Navbar Section
+/**************************************
+Navbar Section
+**************************************/
+
 // Toggle hamburger menu in mobile view
 var hamburger = document.querySelector(".navbar-hamburger");
 
@@ -24,8 +27,9 @@ hamburger.addEventListener("click", function() {
   };
 });
 
-// Features Section
-// - Switch between different Features tabs
+/**************************************
+Features Section
+**************************************/
 
 // Currently active tab, by default at page load it's tab 1
 var curTabNum = 1;
