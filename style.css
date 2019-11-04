@@ -120,9 +120,17 @@ Navbar Section
 
 .navbar {
   display: flex;
+  padding: 2rem 2rem 1rem;
+  width: 100%;
+  height: 4.5em;
+  flex-flow: row wrap;
+  background: #fff;
   align-items: center;
-  padding: 2rem;
-  justify-content: space-between;
+  justify-content: start;
+  z-index: 10;
+  overflow: hidden;
+  transition: height 0.3s ease,
+              background-color 0.3s ease;
 }
 
 .navbar-logo {
@@ -140,13 +148,27 @@ Navbar Section
 }
 
 .navbar-menu {
-  display: none;
+  display: initial;
   list-style-type: none;
   padding: 0;
+  margin: 2em 0 1.3em;
+}
+
+.navbar-menu li {
+  padding: 1.2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1em;
 }
 
 .navbar-btn {
-  display: none;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+
 .navbar-socialmedia {
   display: flex;
   width: 100%;
@@ -176,34 +198,83 @@ Navbar Section
   -webkit-mask: no-repeat url(images/icon-twitter.svg);
 }
 
+/* The small display layout is styled very differently from the default so those */
+/* differences are split into a separate media query */
+@media (max-width: 1439px) {
+  .navbar {
+    position: fixed;
+    flex-flow: column;
+  }
+
+  .navbar-banner {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+  }
+
+  .navbar-logo img {
+  }
+
+  .navbar-menu {
+    width: 100%;
+  }
+
+  .navbar-menu li {
+    border-bottom: 1px hsl(229, 8%, 30%) solid;
+    color: hsl(229, 8%, 75%);
+    text-align: center;
+  }
+
+  .navbar-menu li:hover {
+    color: #fff;
+  }
+
+  .navbar-menu li:first-child {
+    border-top: 1px hsl(229, 8%, 30%) solid;
+  }
+
+  .navbar-btn {
+    width: 50%;
+    border: 3px hsl(229, 8%, 75%) solid;
+    color: hsl(229, 8%, 75%);
+    background: none;
+    font-weight: 500;
+  }
+
+  .navbar-btn:hover {
+    border: 3px #fff solid;
+    color: #fff;
+    background: none;
+    box-shadow: none;
+
+  }
+
 }
 
 @media (min-width: 1440px) {
   .navbar {
-    padding: 2em 8em;
+    padding: 2em 8em 1em;
+    height: auto;
   }
 
   .navbar-menu {
     display: initial;
-    margin-left: auto;
+    margin: 0 0 0 auto;
   }
 
   .navbar-menu > li {
     display: inline-block;
-    text-transform: uppercase;
     margin-right: 3em;
     font-size: 0.9em;
-    letter-spacing: 2px;
+  }
+
+  .navbar-menu li:first-child {
+    border-top: none;
   }
 
   .navbar-btn {
-    display: initial;
-    color: #fff;
     padding: 0.7em 2.2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     font-size: 0.9em;
-    font-weight: 400;
   }
 
   .navbar-hamburger {
@@ -222,7 +293,7 @@ Intro Section
   display: flex;
   flex-flow: column-reverse;
   align-items: center;
-  padding: 2.5rem 0;
+  padding: 7.5rem 0;
 }
 
 .intro-content {
